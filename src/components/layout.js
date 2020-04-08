@@ -67,4 +67,9 @@ const Layout = ({ location, title, children }) => {
   )
 }
 
+const URLCheck = (path) => {
+  const result = path.indexOf(`/tags/`)
+  return result !== -1;
+}
+
 export default Layout

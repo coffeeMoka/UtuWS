@@ -1,0 +1,19 @@
+import React from 'react';
+import { Link } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
+
+const Tag = ({ tag }) => (
+    <Link to={`/tags/${kebabCase(tag)}/`}>
+        <li style={{display: 'inline'}}>{tag}</li>
+    </Link>
+);
+
+const Tags = ({ tags }) => (
+    <ul>
+        {(tags || []).map(tag => (
+            <Tag key={tag} tag={tag} />
+        ))}
+    </ul>
+);
+
+export default Tags;
