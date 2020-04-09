@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `うつニートの雑記`,
+    titleAlt: 'うつニートの雑記',
     author: {
       name: `ふゆなつ`,
       summary: `うつニートのふゆなつがヴァイスシュヴァルツ語ったり、プログラム語ったりの雑記ブログ。`,
     },
     description: `うつニートがヴァイスシュヴァルツ語ったり、プログラム語ったり。`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    url: `https://gatsby-starter-blog-demo.netlify.com`,
     social: {
       twitter: `coffeeFuyunatsu`,
     },
@@ -65,7 +67,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `content/assets/gatsby-icon.png`,
       },
     },
