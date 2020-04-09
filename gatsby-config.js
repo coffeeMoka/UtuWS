@@ -9,6 +9,7 @@ module.exports = {
     description: `うつニートがヴァイスシュヴァルツ語ったり、プログラム語ったり。`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     url: `https://gatsby-starter-blog-demo.netlify.com`,
+    siteLanguage: 'ja',
     social: {
       twitter: `coffeeFuyunatsu`,
     },
