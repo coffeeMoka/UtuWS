@@ -1,18 +1,8 @@
+const config = require('./config/site')
+
 module.exports = {
   siteMetadata: {
-    title: `うつニートの雑記`,
-    titleAlt: 'うつニートの雑記',
-    author: {
-      name: `ふゆなつ`,
-      summary: `うつニートのふゆなつがヴァイスシュヴァルツ語ったり、プログラム語ったりの雑記ブログ。`,
-    },
-    description: `うつニートがヴァイスシュヴァルツ語ったり、プログラム語ったり。`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    url: `https://gatsby-starter-blog-demo.netlify.com`,
-    siteLanguage: 'ja',
-    social: {
-      twitter: `coffeeFuyunatsu`,
-    },
+    ...config
   },
   plugins: [
     {
@@ -63,11 +53,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `うつニートの雑記`,
-        short_name: `うニ雑`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        name: config.title,
+        short_name: config.shortName,
+        description: config.description,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
         display: `standalone`,
         icon: `content/assets/gatsby-icon.png`,
       },
