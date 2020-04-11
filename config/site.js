@@ -14,6 +14,6 @@ module.exports = {
     social: {
       twitter: `coffeeFuyunatsu`,
     },
-    themeColor: `#ffffff`,
-    backgroundColor: `#663399`,
+    themeColor: `#ff00ff`,
+    backgroundColor: `#ff5800`,
 }
