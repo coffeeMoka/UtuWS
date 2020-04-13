@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
+import styles from '../styles/tag.module.css';
 
 const Tag = ({ tag }) => (
     <Link to={`/tags/${kebabCase(tag)}/`}>
-        <li style={{display: 'inline'}}>{tag}</li>
+        <li>{tag}</li>
     </Link>
 );
 
 const Tags = ({ tags }) => (
-    <ul>
+    <ul className={styles.tags}>
         {(tags || []).map(tag => (
             <Tag key={tag} tag={tag} />
         ))}

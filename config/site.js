@@ -4,7 +4,7 @@ module.exports = {
     titleAlt: 'うつニートの雑記',
     author: {
       name: `ふゆなつ`,
-      summary: `うつニートのふゆなつがヴァイスシュヴァルツ語ったり、プログラム語ったりの雑記ブログ。`,
+      summary: `WS語ったり、プログラム語ったりの雑記ブログ。`,
     },
     shortName: `うニ雑`,
     description: `うつニートがヴァイスシュヴァルツ語ったり、プログラム語ったり。`,

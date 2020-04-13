@@ -5,6 +5,7 @@ import Image from 'gatsby-image';
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from "../components/tags"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -37,8 +38,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date}
-            {post.frontmatter.tags}
           </p>
+          <Tags tags={post.frontmatter.tags}></Tags>
          
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />

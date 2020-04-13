@@ -14,6 +14,8 @@ const Layout = ({ location, title, children }) => {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          marginRight: 'auto',
+          marginLeft: 'auto'
         }}
       >
         <Link
@@ -33,6 +35,8 @@ const Layout = ({ location, title, children }) => {
         style={{
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
+          marginRight: 'auto',
+          marginLeft: 'auto'
         }}
       >
         <Link
